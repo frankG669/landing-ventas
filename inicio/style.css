@@ -1,0 +1,91 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+/********************* header *********************/
+header{
+    height: 150px;
+    /* background-color: #3F2817; */
+    background-color: #000000;
+}
+.logo-header{
+    width: 180px;
+}
+.menu-enlaces{
+    display: flex;
+    justify-content: space-between;
+}
+.enlaces ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.enlaces li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.enlaces a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 10px;
+    font-size: 18px;
+}
+/********************* fin header *********************/
+/********************* main *********************/
+.jumbotron{
+    width: 100%;
+    height: 510px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jumbotron img{
+    width: 400px;
+    margin-left: 60px;
+    border-left:  solid 1px #FFFFFF;
+}
+.elementos-jumbotron{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.elementos-jumbotron h1{
+    font-size: 50px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.elementos-jumbotron span{
+    color: #FFFFFF;
+}
+.mensaje{
+    color: #FFFFFF;
+}
+.email-contacto{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.input-email{
+    width: 350px;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.input-button{
+    background-color: rgb(128, 128, 128);
+    color: #FFFFFF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.input-button:hover{
+    background-color: #00FF00;
+}
+.mensaje{
+    margin-top: 10px;
+}
+.imagen-cafe img{
+    width: 350px;
+}
