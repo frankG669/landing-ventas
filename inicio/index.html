@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../normalize/normalize.css">
+    <link rel="icon" type="image/png" href="../assets/images/inicio/logo2.png">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Café Cancún</title>
 </head>
 <body>
     <!---------------------- Inicio del header --------------------->
     <header>
-        <section class="menu-enlaces">
+        <section class="menu-enlaces" id="inicio">
             <nav class="logo">
                 <!---------------------- Logotipo --------------------->
-                <img class="logo-header" src="../assets/images/inicio/logo-blanco.png" alt="">
+                <img class="logo-header" src="../assets/images/inicio/logo2.png" alt="">
             </nav>
             <nav class="enlaces">
                 <!---------------------- Enlaces --------------------->
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Menú</a></li>
-                    <li><a href="#">Ubicaciones</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#menu-cafes">Menú</a></li>
+                    <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                    <li><a href="#ubicacion">Ubicaciones</a></li>
                 </ul>
             </nav>
         </section>
@@ -38,76 +38,334 @@
                     <span>El Café Nos Complementa</span>
                 </div>
                 <div class="email">
-                    <div class="email-contacto">
-                        <input class="input-email" type="email" placeholder="Correo:" required>
-                        <input class="input-button" type="button" value="Enviar">
-                    </div>
-                    <div class="mensaje">
-                        <span>Recibiras un correo de innmediato con nuestro menú y las ofertas del día</span>
-                    </div>
+                    <form action="" class="formulario-contacto">
+                        <div class="email-contacto">
+                            <input class="input-email" type="email" placeholder="Correo:" required>
+                            <input class="input-button" type="submit" value="Enviar">
+                        </div>
+                        <div class="mensaje">
+                            <span>Recibiras un correo de innmediato con nuestro menú y las ofertas del día</span>
+                        </div>
+                    </form>
                 </div>
             </article>
             <article>
                 <img src="../assets/images/inicio/imagen-jumbotron1.webp" alt="Imagen café negro">
             </article>
         </section>
-        <!---------------------- Café americano ---------------------->
-        <section class="menu-cafes">
-            <section class="cafe-americano">
-                <article class="menu-cafes">
-                    <div class="info-cafe">
-                        <div class="imagen-cafe">
-                            <img src="../assets/images/inicio/images-cafe-jpg/americano.JPG" alt="">
+        <!---------------------- Video cafeteria ---------------------->
+        <section class="presentacion">
+            <article class="presentacion-video">
+                <div class="video">
+                    <video src="../assets/video/video-cafeteria.mp4" controls></video>
+                </div>
+                <div class="parrafo-presentacion">
+                    <h2>¡Bienvenidos a Café Cancún!</h2>
+                    <p>
+                        Somos una cafetería única que ofrece una experiencia inolvidable en el corazón de la ciudad. Nuestro ambiente acogedor y relajante es perfecto para disfrutar de una taza de café fresco, preparado con granos de alta calidad, y complementado con una deliciosa selección de postres y bocadillos.
+                    </p>
+                </div>
+            </article>
+            <article class="presentacion-imagen">
+                <div class="imagen-presentacion">
+                    <img src="../assets/images/inicio/images-cafe-jpg/taza-cafe.jpg" alt="">
+                </div>
+                <div class="parrafo-presentacion2">
+                    <p>
+                        En Café Cancún, nuestro objetivo es ofrecer un servicio excepcional y satisfacer las necesidades de cada cliente. Ya sea que estés buscando un lugar tranquilo para trabajar o simplemente quieras disfrutar de un momento relajado con amigos, estamos seguros de que encontrarás en nosotros el lugar perfecto.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <!---------------------- Menú cafés ---------------------->
+        <section class="disfruta-cafes" id="menu-cafes">
+            <h2>Disfruta de nuestra gran variedad de cafés</h2>
+        </section>
+        <section class="menu-disponible">
+            <!---------------------- Café americano ---------------------->
+            <article class="menu-cafes">
+                <div class="info-cafe">
+                    <div class="imagen-cafe">
+                        <img src="../assets/images/inicio/images-cafe-jpg/americano.JPG" alt="">
+                    </div>
+                    <div class="descripcion-cafe">
+                        <p><b>Café Americano</b></p>
+                        <span>$35</span>
+                    </div>
+                </div>
+            </article>
+            <!---------------------- Café moka ---------------------->
+            <article class="menu-cafes">
+                <div class="info-cafe">
+                    <div class="imagen-cafe">
+                        <img src="../assets/images/inicio/images-cafe-jpg/moka.JPG" alt="">
+                    </div>
+                    <div class="descripcion-cafe">
+                        <p><b>Café Moka</b></p>
+                        <span>$45</span>
+                    </div>
+                </div>
+            </article>
+            <!---------------------- Café turco ---------------------->
+            <article class="menu-cafes">
+                <div class="info-cafe">
+                    <div class="imagen-cafe">
+                        <img src="../assets/images/inicio/images-cafe-jpg/turco.JPG" alt="">
+                    </div>
+                    <div class="descripcion-cafe">
+                        <p><b>Café Turco</b></p>
+                        <span>$65</span>
+                    </div>
+                </div>
+            </article>
+            <!---------------------- Café irlandes ---------------------->
+            <article class="menu-cafes">
+                <div class="info-cafe">
+                    <div class="imagen-cafe">
+                        <img src="../assets/images/inicio/images-cafe-jpg/irlandes.JPG" alt="">
+                    </div>
+                    <div class="descripcion-cafe">
+                        <p><b>Café Irlandés</b></p>
+                        <span>$80</span>
+                    </div>
+                </div>
+            </article>
+            <!---------------------- Café capuccino ---------------------->
+            <article class="menu-cafes">
+                <div class="info-cafe">
+                    <div class="imagen-cafe">
+                        <img src="../assets/images/inicio/images-cafe-jpg/capuccino.JPG" alt="">
+                    </div>
+                    <div class="descripcion-cafe">
+                        <p><b>Café Capuccino</b></p>
+                        <span>$65</span>
+                    </div>
+                </div>
+            </article>
+            <!---------------------- Café doble ---------------------->
+            <article class="menu-cafes">
+                <div class="info-cafe">
+                    <div class="imagen-cafe">
+                        <img src="../assets/images/inicio/images-cafe-jpg/doble.JPG" alt="">
+                    </div>
+                    <div class="descripcion-cafe">
+                        <p><b>Café Doble</b></p>
+                        <span>$50</span>
+                    </div>
+                </div>
+            </article>
+            <!---------------------- Café olla ---------------------->
+            <article class="menu-cafes">
+                <div class="info-cafe">
+                    <div class="imagen-cafe">
+                        <img src="../assets/images/inicio/images-cafe-jpg/olla.JPG" alt="">
+                    </div>
+                    <div class="descripcion-cafe">
+                        <p><b>Café De Olla</b></p>
+                        <span>$35</span>
+                    </div>
+                </div>
+            </article>
+            <!---------------------- Café macchiato ---------------------->
+            <article class="menu-cafes">
+                <div class="info-cafe">
+                    <div class="imagen-cafe">
+                        <img src="../assets/images/inicio/images-cafe-jpg/macchiato.JPG" alt="">
+                    </div>
+                    <div class="descripcion-cafe">
+                        <p><b>Café Macchiato</b></p>
+                        <span>$75</span>
+                    </div>
+                </div>
+            </article>
+            <!---------------------- Café espresso ---------------------->
+            <article class="menu-cafes">
+                <div class="info-cafe">
+                    <div class="imagen-cafe">
+                        <img src="../assets/images/inicio/images-cafe-jpg/espresso.JPG" alt="">
+                    </div>
+                    <div class="descripcion-cafe">
+                        <p><b>Café Espresso</b></p>
+                        <span>$50</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        <!---------------------- Inicio menú de panes ---------------------->
+        <section class="menu-panes">
+            <article class="presentacion-panaderia">
+                <div class="mensaje-panaderia">
+                    <h3>Pan recien horneado especialmente para ti</h3>
+                    <a href="#"><input type="button" value="Ver más"></a>
+                </div>
+                <div class="imagen-presentacion">
+                    <img src="../assets/images/inicio/imagenes-pan/pan-presentacion.png" alt="Imagen de pan dulce">
+                </div>
+            </article>
+        </section>
+        <!---------------------- Sobre nosotros ---------------------->
+        <section class="sobre-nosotros-presentacion">
+            <article class="sobre-nosotros" id="sobre-nosotros">
+                <div class="presentacion-cafeteria">
+                    <div class="contenido-nosotros caja1">
+                        <div class="mensaje-nosotros">
+                            <p>
+                                En Café Cancún utilizamos granos de café de alta calidad, seleccionados cuidadosamente de las mejores regiones cafetaleras del mundo. Nuestro equipo de baristas altamente capacitados preparará tu bebida de acuerdo a tus preferencias, ya sea un latte artístico, un capuchino cremoso o un americano intenso.
+                            </p>
                         </div>
-                        <div class="descripcion-cafe">
-                            <p><b>Café Americano</b></p><br>
-                            <span>$35</span>
+                        <div class="imagen-cafeteria">
+                            <img src="../assets/images/inicio/sobre-nosotros/mesero1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <article class="presentacion-cafeteria margen">
+                    <div class="contenido-nosotros caja2">
+                        <div class="mensaje-nosotros">
+                            <p>
+                                Café Cancún es espacio ideal para disfrutar con amigos, para ir en pareja a una cita romántica o festejar un cumpleaños; donde puedes vivir momentos únicos en un ambiente relajado, escuchando la mejor música a cargo del DJ residente, observando un bello atardecer sobre la laguna, o viendo los impactantes fuegos artificiales que se presentan cada noche. <br>
+                                Además, contamos con una selección de alimentos deliciosos, desde pasteles frescos y muffins hasta sándwiches y ensaladas preparadas con ingredientes de alta calidad. También ofrecemos opciones vegetarianas y veganas para nuestros clientes que siguen una dieta especial.
+                            </p>
+                        </div>
+                        <div class="imagen-cafeteria">
+                            <img src="../assets/images/inicio/sobre-nosotros/mesero3.png" alt="">
                         </div>
                     </div>
                 </article>
-                <!---------------------- Café capuccino ---------------------->
-                <section class="cafe-capuccino">
-                    <article class="menu-cafes">
-                        <div class="info-cafe">
-                            <div class="imagen-cafe">
-                                <img src="../assets/images/inicio/images-cafe-jpg/capuccino.JPG" alt="">
-                            </div>
-                            <div class="descripcion-cafe">
-                                <p><b>Capuccino</b></p><br>
-                                <span>$45</span>
-                            </div>
+                <article class="presentacion-cafeteria margen">
+                    <div class="contenido-nosotros caja3">
+                        <div class="mensaje-nosotros">
+                            <p>
+                                En Café Cancún, nuestro objetivo es brindarte una experiencia única de café y comida en un ambiente relajante y acogedor. ¡Ven a visitarnos y déjanos demostrarte por qué somos la mejor cafetería en la zona hotelera!
+                            </p>
                         </div>
-                    </article>
-            </section>
-            <!---------------------- Café moka ---------------------->
-            <section class="cafe-moka">
-                    <article class="menu-cafes">
-                        <div class="info-cafe">
-                            <div class="imagen-cafe">
-                                <img src="../assets/images/inicio/images-cafe-jpg/moka.JPG" alt="">
-                            </div>
-                            <div class="descripcion-cafe">
-                                <p><b>Moka</b></p><br>
-                                <span>$55</span>
-                            </div>
+                        <div class="imagen-cafeteria">
+                            <img src="../assets/images/inicio/sobre-nosotros/mesero4.png" alt="">
                         </div>
-                    </article>
-            </section>
-            <!---------------------- Café turco ---------------------->
-            <section class="cafe-moka">
-                    <article class="menu-cafes">
-                        <div class="info-cafe">
-                            <div class="imagen-cafe">
-                                <img src="../assets/images/inicio/images-cafe-jpg/turco.JPG" alt="">
-                            </div>
-                            <div class="descripcion-cafe">
-                                <p><b>turco</b></p><br>
-                                <span>$60</span>
-                            </div>
-                        </div>
-                    </article>
-            </section>
+                    </div>
+                </article>
+            </article>
         </section>
+        <section class="ubicaciones" id="ubicacion">
+            <!-- aside 1 -->
+            <aside class="aside1">
+                <span class="titulo-aside">Te puede interesar</span>
+                <div class="anuncio anuncio1">
+                    <a href="https://www.nescafe.com/es/blog-cafe/beneficios/beneficios-cafe-que-desconoces" target="_blank">
+                        <img src="../assets/images/inicio/aside/beneficios-cafe.JPG" alt="Beneficios del café">
+                    </a>
+                    <span>
+                        <a href="https://www.nescafe.com/es/blog-cafe/beneficios/beneficios-cafe-que-desconoces" target="_blank">Beneficios del café</a>
+                    </span>
+                </div>
+                <div class="anuncio anuncio2">
+                    <a href="https://cafearabo.com/etapas-proceso-produccion-cafe/" target="_blank">
+                        <img src="../assets/images/inicio/aside/proceso-cultivo.JPG" alt="Cultivo del café">
+                        <span>
+                            <a href="https://cafearabo.com/etapas-proceso-produccion-cafe/" target="_blank">Proceso de cultivo</a>
+                        </span>
+                    </a>
+                </div>
+                <div class="anuncio anuncio3">
+                    <a href="https://cafe1820.com/cuales-son-los-tipos-de-cafe-mas-populares-en-el-mundo/" target="_blank">
+                        <img src="../assets/images/inicio/aside/tipos-cafe.JPG" alt="Tipos de café">
+                    </a>
+                    <span>
+                        <a href="https://cafe1820.com/cuales-son-los-tipos-de-cafe-mas-populares-en-el-mundo/" target="_blank">Tipos de cafés</a>
+                    </span>
+                </div>
+                <div class="anuncio anuncio4">
+                    <a href="https://www.bonka.es/amor-por-el-cafe/origen-del-cafe#:~:text=La%20historia%20del%20caf%C3%A9%20empieza,a%20consumir%20granos%20de%20caf%C3%A9." target="_blank">
+                        <img src="../assets/images/inicio/aside/historia-cafe.JPG" alt="Historia del café">
+                    </a>
+                    <span>
+                        <a href="https://www.bonka.es/amor-por-el-cafe/origen-del-cafe#:~:text=La%20historia%20del%20caf%C3%A9%20empieza,a%20consumir%20granos%20de%20caf%C3%A9." target="_blank">Historia del café</a>
+                    </span>
+                </div>
+            </aside>
+            <!-- ubicacion 1 -->
+            <article class="ubicacion1">
+                <iframe class="ubicacion-cafe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d369.1779625521526!2d-86.79361685862047!3d21.149188953164213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1676530371951!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="direccion">Kilometro 10 de la Zona Hotelera, edificio No. 35, planta baja</p>
+            </article>
+            <!-- ubicacion 2 -->
+            <article class="ubicacion2">
+                <iframe class="ubicacion-cafe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1106.2091336767621!2d-86.82685398828522!3d21.15919830762984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1676530450290!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="direccion">Av.Tulum, SM 65, MZ 90, Lote 03</p>
+            </article>
+            <!-- aside 2 -->
+            <aside class="aside2">
+                <span class="titulo-aside">Te puede interesar</span>
+                <div class="anuncio anuncio5">
+                    <a href="https://www.civitatis.com/blog/mejores-cafes-mundo/" target="_blank">
+                        <img src="../assets/images/inicio/aside/mejor-cafe.JPG" alt="EL mejor café">
+                    </a>
+                    <span>
+                        <a href="https://www.civitatis.com/blog/mejores-cafes-mundo/" target="_blank">Mejores cafés del mundo</a>
+                    </span>
+                </div>
+                <div class="anuncio anuncio6">
+                    <a href="https://www.tripadvisor.com.mx/Restaurants-g150807-Cancun_Yucatan_Peninsula.html" target="_blank">
+                        <img src="../assets/images/inicio/aside/mejores-restaurantes.JPG" alt="Mejores restaurantes del Cancún">
+                    </a>
+                    <span>
+                        <a href="https://www.tripadvisor.com.mx/Restaurants-g150807-Cancun_Yucatan_Peninsula.html" target="_blank">Restaurantes en cancún</a>
+                    </span>
+                </div>
+                <div class="anuncio anuncio7">
+                    <a href="https://www.tripadvisor.com.mx/Restaurants-g150807-Cancun_Yucatan_Peninsula.html" target="_blank">
+                        <img src="../assets/images/inicio/aside/ranking.JPG" alt="Mayores consumidores de café">
+                    </a>
+                    <span>
+                        <a href="https://www.tripadvisor.com.mx/Restaurants-g150807-Cancun_Yucatan_Peninsula.html" target="_blank">Mayores consumidores de café</a>
+                    </span>
+                </div>
+                <div class="anuncio anuncio8">
+                    <a href="https://www.womenshealthmag.com/es/nutricion-dietetica/a30964901/cafe-descafeinado-puro-beneficios-perjuicios/" target="_blank">
+                        <img src="../assets/images/inicio/aside/cafe-descafeinado.JPG" alt="Café descafeinado">
+                    </a>
+                    <span>
+                        <a href="https://www.womenshealthmag.com/es/nutricion-dietetica/a30964901/cafe-descafeinado-puro-beneficios-perjuicios/" target="_blank">¿Café descafeinado?</a>
+                    </span>
+                </div>
+            </aside>
+        </section>
+        <!-- marcas -->
+        <section class="marcas">
+            <article class="marcas-cafes">
+                <img class="marca-patrocinador" src="../assets/images/inicio/marcas/chiapas.JPG" alt="">
+                <img class="marca-patrocinador" src="../assets/images/inicio/marcas/el-cuartito.JPG" alt="">
+                <img class="marca-patrocinador" src="../assets/images/inicio/marcas/nescafe.JPG" alt="">
+                <img class="marca-patrocinador" src="../assets/images/inicio/marcas/nespresso.JPG" alt="">
+                <img class="marca-patrocinador" src="../assets/images/inicio/marcas/lakeside.JPG" alt="">
+            </article>
+        </section>
+        <footer class="derechos">
+            <section class="derechos-autor">
+                <p>
+                    Copyright © 2023 Café Cancún. Todos los derechos reservados. El contenido de este sitio web, incluyendo textos, imágenes, diseños y logotipos,
+                    son usados unicamente con fines académicos.
+                </p>
+            </section>
+            <section class="redes">
+                <!-- facebook -->
+                <a href="https://es-la.facebook.com/" target="_blank">
+                    <img src="../assets/images/inicio/iconos-redes/facebook.svg" alt="Facebook">
+                </a>
+                <!-- instagram -->
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../assets/images/inicio/iconos-redes/instagram.svg" alt="Instagram">
+                </a>
+                <!-- twiter -->
+                <a href="https://twitter.com/?lang=es" target="_blank">
+                    <img src="../assets/images/inicio/iconos-redes/twitter.svg" alt="Twitter">
+                </a>
+                <!-- pinterest -->
+                <a href="https://www.pinterest.com.mx/" target="_blank">
+                    <img src="../assets/images/inicio/iconos-redes/pinterest.svg" alt="Pinterest">
+                </a>
+            </section>
+        </footer>
     </main>
 </body>
 </html>

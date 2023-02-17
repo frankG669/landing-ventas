@@ -1,14 +1,24 @@
 body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
 }
 /********************* header *********************/
 header{
-    height: 150px;
+    height: 80px;
     /* background-color: #3F2817; */
-    background-color: #000000;
+    background-color: hsla(0, 0%, 0%, 0.678);
+    position: fixed;
+    width: 100%;
+}
+.logo span{
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .logo-header{
-    width: 180px;
+    width: 150px;
+    margin-left: 45px
 }
 .menu-enlaces{
     display: flex;
@@ -81,11 +91,277 @@ header{
     cursor: pointer;
 }
 .input-button:hover{
-    background-color: #00FF00;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 .mensaje{
     margin-top: 10px;
 }
+/********************* menú cafés *********************/
+.disfruta-cafes{
+    /* background-image: url(../assets/images/inicio/fondo-mensaje-menu-2.jpg); */
+    /* background-color: #000000; */
+    background-image: linear-gradient(to top, #2d2d2d, #262626, #1f1f1f, #181818, #101010, #0b0b0b, #060606, #000000, #000000, #000000, #000000, #000000);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disfruta-cafes h2{
+    font-size: 50px;
+    color: #FFFFFF;
+
+}
+.cafe{
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .imagen-cafe img{
-    width: 350px;
+    width: 330px;
+}
+.menu-disponible{
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+.menu-cafes{
+    width: 340px;
+    margin: 30px;
+}
+.menu-cafes p, span{
+    font-size: 20px;
+}
+.info-cafe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(159, 154, 154, 0.396);
+    box-shadow: 0px 29px 50px -20px rgba(0,0,0,0.75);
+    padding: 10px;
+    border-radius: 12px;
+}
+.info-cafe:hover{
+    box-shadow: 0px 29px 39px 0px rgba(2,249,112,0.75);
+    box-shadow: 0px 29px 39px 0px rgba(63,34,18,0.75);
+}
+.descripcion-cafe{
+    text-align: center;
+}
+/********************** Presentación **********************/
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.presentacion video, img{
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 0px 29px 50px -20px rgba(0,0,0,0.75);
+}
+.parrafo-presentacion,
+.parrafo-presentacion2{
+    width: 85%;
+    text-align: center;
+}
+.presentacion-video{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 25px;
+    margin: 5px;
+    box-shadow: 0px 29px 50px -20px rgba(0,0,0,0.75);
+}
+.presentacion-imagen{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin: 5px;
+    box-shadow: 0px 29px 50px -20px rgba(0,0,0,0.75);
+}
+
+/********************** presentacion del menú de pan **********************/
+.menu-panes{
+    background-color: #000000;
+    border-bottom: solid 1px #373636;
+}
+.menu-panes h3{
+    color: #FFFFFF;
+    font-size: 30px;
+}
+.menu-panes img{
+    width: 450px;
+}
+.presentacion-panaderia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.mensaje-panaderia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mensaje-panaderia input{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(128, 128, 128);
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mensaje-panaderia input:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.mensaje-panaderia,
+.imagen-presentacion{
+    margin: 35px;
+}
+/********************** Sobre nosotros **********************/
+.sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    /* background-color: #bbbbbb; */
+    background-color: #000000;
+}
+.presentacion-cafeteria{
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+.contenido-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mensaje-nosotros p{
+    color: #FFFFFF;
+    font-size: 28px;
+    text-align: center;
+    text-shadow: 1px 5px 7px rgba(0,0,0,0.51);
+}
+.caja2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.margen{
+    margin-top: 50px;
+}
+/********************** ubicaciones y aside **********************/
+.ubicaciones{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.ubicaciones a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+}
+.aside1 img{
+    width: 200px;
+    box-shadow: none;
+}
+.aside2 img{
+    width: 200px;
+    box-shadow: none;
+}
+.aside1{
+    display: flex;
+    flex-direction: column;
+    background-color: #a1a1a12d;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.aside2{
+    display: flex;
+    flex-direction: column;
+    background-color: #a1a1a12d;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.anuncio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: solid 1px #8883832f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ubicacion-cafe{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 0px 45px -14px rgba(0,0,0,0.75);
+    margin-top: 25%;
+}
+.titulo-aside{
+    font-weight: 700;
+}
+.direccion{
+    text-align: center;
+}
+/* marcas */
+.marcas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+}
+.marcas-cafes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+.marca-patrocinador{
+    width: 17%;
+    box-shadow: none;
+}
+/* footer */
+.derechos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    height: 200px;
+    margin-top: 200px;
+}
+.derechos-autor{
+    color: #FFFFFF;
+    width: 50%;
+    border-right: solid 1px #2d2d2d;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+}
+.redes a{
+    text-decoration: none;
+}
+.redes img{
+    box-shadow: none;
+    width: 25px;
+
 }
