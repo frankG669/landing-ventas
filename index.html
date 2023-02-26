@@ -4,40 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../normalize/normalize.css">
     <link rel="icon" type="image/png" href="../assets/images/inicio/logo2.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Café Cancún</title>
 </head>
 <body>
     <!---------------------- Inicio del header --------------------->
     <header>
-        <section class="menu-enlaces" id="inicio">
-            <nav class="logo">
-                <!---------------------- Logotipo --------------------->
-                <img class="logo-header" src="../assets/images/inicio/logo2.png" alt="">
-            </nav>
-            <!---------------------- Enlaces --------------------->
-            <nav class="enlaces">
-                <ul class="nav-opciones">
-                    <li>
-                        <img class="btn-menu" src="../assets/images/inicio/boton-menu.svg" alt="Menú">
-                        <ul class="menu-desplegable">
-                            <li><a href="./index.html">Inicio</a></li>
-                            <li><a href="#menu-cafes">Menú</a></li>
-                            <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-                            <li><a href="#ubicacion">Ubicaciones</a></li>
-                        </ul>
-                    </li>
-                    
-                </ul>
-            </nav>
-        </section>
+        <article class="navbar navbar-expand-lg bg-body-tertiaryr diseño">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="logo" src="./assets/images/inicio/logo2.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="navbar-toggler-icon" src="./assets/images/inicio/iconos/menu.svg"></img>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="#inicio">Inicio</a>
+                  <a class="nav-link" href="#menu-cafes">Menú</a>
+                  <a class="nav-link" href="#ubicacion">¿Dónde nos ubicamos?</a>
+                </div>
+              </div>
+            </div>
+          </article>
     </header>
     <!---------------------- Fin del header --------------------->
     <!---------------------- Inicio del main --------------------->
     <main>
-        <section class="jumbotron">
+        <section class="jumbotron" id="inicio">
             <article class="titulo">
                 <div class="elementos-jumbotron">
                     <h1>Café Cancún</h1>
@@ -56,7 +53,7 @@
                 </div>
             </article>
             <article>
-                <img src="../assets/images/inicio/imagen-jumbotron1.webp" alt="Imagen café negro">
+                <img src="./assets/images/inicio/imagen-jumbotron2.jpg" alt="Imagen café negro">
             </article>
         </section>
         <!---------------------- Video cafeteria ---------------------->
@@ -210,48 +207,6 @@
                 </div>
             </article>
         </section>
-        <!---------------------- Sobre nosotros ---------------------->
-        <section class="sobre-nosotros-presentacion">
-            <article class="sobre-nosotros" id="sobre-nosotros">
-                <div class="presentacion-cafeteria">
-                    <div class="contenido-nosotros caja1">
-                        <div class="mensaje-nosotros">
-                            <p>
-                                En Café Cancún utilizamos granos de café de alta calidad, seleccionados cuidadosamente de las mejores regiones cafetaleras del mundo. Nuestro equipo de baristas altamente capacitados preparará tu bebida de acuerdo a tus preferencias, ya sea un latte artístico, un capuchino cremoso o un americano intenso.
-                            </p>
-                        </div>
-                        <div class="imagen-cafeteria">
-                            <img src="../assets/images/inicio/sobre-nosotros/mesero1.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <article class="presentacion-cafeteria margen">
-                    <div class="contenido-nosotros caja2">
-                        <div class="mensaje-nosotros">
-                            <p>
-                                Café Cancún es espacio ideal para disfrutar con amigos, para ir en pareja a una cita romántica o festejar un cumpleaños; donde puedes vivir momentos únicos en un ambiente relajado, escuchando la mejor música a cargo del DJ residente, observando un bello atardecer sobre la laguna, o viendo los impactantes fuegos artificiales que se presentan cada noche. <br>
-                                Además, contamos con una selección de alimentos deliciosos, desde pasteles frescos y muffins hasta sándwiches y ensaladas preparadas con ingredientes de alta calidad. También ofrecemos opciones vegetarianas y veganas para nuestros clientes que siguen una dieta especial.
-                            </p>
-                        </div>
-                        <div class="imagen-cafeteria">
-                            <img src="../assets/images/inicio/sobre-nosotros/mesero3.png" alt="">
-                        </div>
-                    </div>
-                </article>
-                <article class="presentacion-cafeteria margen">
-                    <div class="contenido-nosotros caja3">
-                        <div class="mensaje-nosotros">
-                            <p>
-                                En Café Cancún, nuestro objetivo es brindarte una experiencia única de café y comida en un ambiente relajante y acogedor. ¡Ven a visitarnos y déjanos demostrarte por qué somos la mejor cafetería en la zona hotelera!
-                            </p>
-                        </div>
-                        <div class="imagen-cafeteria">
-                            <img src="../assets/images/inicio/sobre-nosotros/mesero4.png" alt="">
-                        </div>
-                    </div>
-                </article>
-            </article>
-        </section>
         <section class="ubicaciones" id="ubicacion">
             <!---------------------- Aside 1 ---------------------->
             <aside class="aside1">
@@ -358,22 +313,25 @@
             <section class="redes">
                 <!-- facebook -->
                 <a href="https://es-la.facebook.com/" target="_blank">
-                    <img src="../assets/images/inicio/iconos-redes/facebook.svg" alt="Facebook">
+                    <img src="./assets/images/inicio/iconos/facebook.svg" alt="Facebook">
                 </a>
                 <!-- instagram -->
                 <a href="https://www.instagram.com/" target="_blank">
-                    <img src="../assets/images/inicio/iconos-redes/instagram.svg" alt="Instagram">
+                    <img src="./assets/images/inicio/iconos/instagram.svg" alt="Instagram">
                 </a>
                 <!-- twiter -->
                 <a href="https://twitter.com/?lang=es" target="_blank">
-                    <img src="../assets/images/inicio/iconos-redes/twitter.svg" alt="Twitter">
+                    <img src="./assets/images/inicio/iconos/twitter.svg" alt="Twitter">
                 </a>
                 <!-- pinterest -->
                 <a href="https://www.pinterest.com.mx/" target="_blank">
-                    <img src="../assets/images/inicio/iconos-redes/pinterest.svg" alt="Pinterest">
+                    <img src="./assets/images/inicio/iconos/pinterest.svg" alt="Pinterest">
                 </a>
             </section>
         </footer>
     </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
